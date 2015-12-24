@@ -6,18 +6,23 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Propersquid
+email: scott@propersquid.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My personal website for animation, coding, games, and VFX related projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://propersquid.com" # the base hostname & protocol for your site
+twitter_username: propersquid
+github_username:  scott-wilson
+stackoverflow_username:  3108288/scottwilson
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - tables
+    - autolink
+    - with_toc_data
 
 exclude: [vendor]
