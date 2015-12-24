@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi! My name is Scott Wilson, and I am a Pipeline TD at DHX Media in Vancouver. I enjoy programming, and developing tools that help artists create beautiful art. I am a huge supporter of open source software, contributing to projects where I can. (This website is released under the Apache 2.0 licence. Fork it [here](https://github.com/scott-wilson/propersquid.com).)
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+I am very fluent in Python, and have a basic knowledge of C++. If you have any coding questions, I'm always happy to help.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+If there are any problems with the website, feel free to create an issue or pull request on GitHub.
+
+- [Create Issue](https://github.com/scott-wilson/propersquid.com/issues)
+- [Pull Request](https://github.com/scott-wilson/propersquid.com/pulls)
