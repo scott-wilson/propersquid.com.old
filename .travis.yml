@@ -19,7 +19,7 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./script/cibuild.sh
 
-after_success: bundle exec s3_website push --headless
+after_success: bundle exec s3_website push
 
 env:
   global:
