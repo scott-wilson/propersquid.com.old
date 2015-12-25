@@ -11,7 +11,9 @@ email: scott@propersquid.com
 description: > # this means to ignore newlines until "baseurl:"
   My personal website for animation, coding, games, and VFX related projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://propersquid.com.s3.amazonaws.com.s3-website-us-east-1.amazonaws.com" # the base hostname & protocol for your site
+# TODO: Replace this with propersquid once I transfer domain.
+url: "http://propersquid.com.s3-website-us-east-1.amazonaws.com" # the base hostname & protocol for your site
+# url: "http://propersquid.com" # the base hostname & protocol for your site
 twitter_username: propersquid
 github_username:  scott-wilson
 stackoverflow_username:  3108288/scottwilson
