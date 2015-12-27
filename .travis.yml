@@ -21,7 +21,7 @@ script: ./script/cibuild.sh
 
 deploy:
   provider: script
-  script: bundle exec s3_website push
+  script: git clean -xdf && bundle exec s3_website push
   on:
     branch: master
 
