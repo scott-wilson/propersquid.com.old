@@ -3,6 +3,7 @@
  */
 .highlight {
     background: #fff;
+    font-family: $code-font-family;
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
