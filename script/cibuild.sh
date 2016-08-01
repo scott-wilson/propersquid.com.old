@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-bundle exec htmlproof ./_site --check-html --allow-hash-href
+bundle exec htmlproofer ./_site --check-html --allow-hash-href --disable-external
