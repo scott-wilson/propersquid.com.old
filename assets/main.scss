@@ -1,0 +1,25 @@
+---
+---
+
+@import '{{ site.theme }}';
+
+.post-content {
+  h1 {
+    &::after {
+      border: 1px solid $grey-color;
+      content: ' ';
+      display: block;
+    }
+  }
+
+  h2 {
+    &::after {
+      border: 1px solid $grey-color-light;
+      content: ' ';
+      display: block;
+    }
+  }
+}
+
+// Code variables
+$code-font-family: Hack, monospace;
