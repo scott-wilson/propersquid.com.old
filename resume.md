@@ -6,10 +6,8 @@ permalink: /resume/
 
 Projects
 ========
-
 DHX Media
 ---------
-
 The following projects are part of the Maya and Nuke pipeline.
 
 - **Path Template API**: The system to query paths for a specific entity in the pipeline.
@@ -32,10 +30,8 @@ The following projects are part of the Maya and Nuke pipeline.
 
 Experience
 ==========
-
 DHX Media
 ---------
-
 ### Pipeline TD
 *September 2015 - Present*
 
@@ -72,10 +68,8 @@ Nerd Corps Entertainment
 
 Education
 =========
-
 Capilano University
 -------------------
-
 ### Certificate, Digital Animation
 *September 2012 - April 2013*
 
