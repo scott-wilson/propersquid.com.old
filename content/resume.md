@@ -1,8 +1,10 @@
 ---
-layout: resume
-title: Resume
-permalink: /resume/
+title: "Resume"
+date: 2018-01-08T20:13:07-08:00
+weight: 1
+draft: false
 ---
+
 
 Projects
 ========
@@ -33,11 +35,21 @@ The following projects are part of the Maya and Nuke pipeline.
 Experience
 ==========
 
+Cinesite
+--------
+
+### Pipeline TD
+*June 2017 - Present*
+
+- Developing and maintaining the core and Maya pipeline.
+- Mentoring junior and mid-level pipeline TDs.
+- Assisting artists with issues with the pipeline and tools.
+
 DHX Media
 ---------
 
 ### Pipeline TD
-*September 2015 - Present*
+*September 2015 - June 2017*
 
 - Developing and maintaining the Maya and Nuke pipeline.
 - Assisting artists with issues with the pipeline and tools.
@@ -59,7 +71,7 @@ Nerd Corps Entertainment
   well as technical support to collaboratively improve the pipeline.
 
 ### Imaging PA and Junior Compositor
-*June 2013 - March 2014*
+*June 2013 - June 2014*
 
 - Creating render passes from animation scenes to assist rendering and
   compositing efficiency.
@@ -93,6 +105,6 @@ Studied the following:
 Proficiencies
 =============
 
-**Code:** Python, C++, SQL, Javascript, Bash
+**Code:** Python, Go, C++, SQL, TypeScript, JavaScript, Bash
 
-**Software:** Maya, Nuke, Softimage, Photoshop, Blender, Krita, RV, Shotgun
+**Software:** Maya, Nuke, Katana, Softimage, Photoshop, Blender, Krita, RV, Shotgun
