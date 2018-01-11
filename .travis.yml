@@ -1,19 +1,24 @@
-sudo: false
+sudo: required
+dist: trusty
+language: python
 
-language: ruby
-rvm:
-  - 2.3.3
+before_install:
+  - rm -rf public || exit 0
+install:
+  - pip install pygments
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
+script:
+  - /snap/bin/hugo -v
 
-before_script:
- - chmod +x ./script/cibuild.sh # or do this locally and commit
- - chmod +x ./script/cideploy.sh # or do this locally and commit
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-script: ./script/cibuild.sh
-
-after_success: ./script/cideploy.sh
-
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+deploy:
+  provider: s3
+  access_key_id: AKIAIYCJT2IRYNX73KNA
+  secret_access_key:
+    secure: wK3rTiFW3N+xdWwzOC5PgBV/Wv+v6NpOCy/WiOe6uOyXMlzcI7Ry2vTTTCCRzFP2bxbAEZorNtZ//lFnJ6wC9PzpUT5qqBixJre5Rwzhv01Yjc1Kz+KW/vsrN9bwWrVImZYMqoruw+Q1cmmYeH3C0tlYqBD4uEiMBXtEC7qe8WkUvBVTcJEpJZQoUsoieYiOxn9f9wVDvzeLr3v+ewvlc7Q0E9YHfzBeEpOWfipRf5Cfi51ZYdrnbLIC0Lq7QsJXXQpUr/txLsGg9fmFtgmKU2HnrK1TID3MuzHKLf2HbQQanEML5sd9Po2fhla5KG1rJBn5M43+HA5bTw8U8J4vpL32DfVHCkOtzpEPw9tVcyDsGVGLZJWA7t40+YryWgeuesrslQS3yzVngVP2l4QgPFFUlnCUvSAVe+z8olie08gysNxizJzH35rjGZ8R+SsOMQpU0BEnwaclz5x5fKZ4F22AfJpkTd+TzZjm6NuppdDVhilih+lL234zNXf0qymS4DVg25JK8JyV28HAZRLQukltGDi8+MmHzU0uB8ZMquQ1mwxVbxYQKzLaf4hIkNE7RhE7qfIj4ca3NP8hbM1nzlyZOI1c1b9shfKfAZG2sBAHCSbdkYs1/D8jmlayA9+xjtmL3Ycl2CN947EBvHe5b81TSdzpsRc1K/ooEOwY5UE=
+  bucket: propersquid.com
+  local-dir: public
+  acl: public_read
+  skip_cleanup: true
+  on:
+    repo: scott-wilson/propersquid.com
