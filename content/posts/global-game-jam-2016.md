@@ -1,7 +1,7 @@
 ---
 title: "Global Game Jam 2016"
-date: 2016-02-01T14:11:00-00:00
-draft: true
+date: 2016-02-01
+draft: false
 ---
 
 [![GGJ 2016 Asset Linupe](/images/ggj2016_asset_lineupjpg.jpg)](/images/ggj2016_asset_lineupjpg.jpg)
