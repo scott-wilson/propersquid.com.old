@@ -1,4 +1,4 @@
-baseURL = "http://propersquid.com"
+baseURL = "https://propersquid.com"
 languageCode = "en-us"
 title = "Propersquid"
 theme = "minimal"
