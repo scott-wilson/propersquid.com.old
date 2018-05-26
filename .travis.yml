@@ -1,13 +1,17 @@
 sudo: false
 dist: trusty
 language: python
+python:
+  - "3.6"
+cache: pip
 
 before_install:
   - rm -rf public || exit 0
 install:
-  - pip install pygments
+  - pip install pygments awscli
   - sudo apt-get --yes install snapd
   - sudo snap install hugo
+
 script:
   - /snap/bin/hugo -v
 
@@ -21,3 +25,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: scott-wilson/propersquid.com
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
