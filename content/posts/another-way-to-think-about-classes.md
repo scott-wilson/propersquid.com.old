@@ -1,7 +1,7 @@
 ---
 title: "Another Way to Think About Classes"
 date: 2018-05-25T20:31:13-07:00
-draft: true
+draft: false
 ---
 
 One of my friends is learning Python. Which I find exciting, because I am always interested in seeing people learn a skill I really enjoy, and also it is an opportunity for me to help them learn how to program.
