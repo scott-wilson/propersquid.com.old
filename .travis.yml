@@ -13,9 +13,8 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: AKIAIYCJT2IRYNX73KNA
-  secret_access_key:
-    secure: wK3rTiFW3N+xdWwzOC5PgBV/Wv+v6NpOCy/WiOe6uOyXMlzcI7Ry2vTTTCCRzFP2bxbAEZorNtZ//lFnJ6wC9PzpUT5qqBixJre5Rwzhv01Yjc1Kz+KW/vsrN9bwWrVImZYMqoruw+Q1cmmYeH3C0tlYqBD4uEiMBXtEC7qe8WkUvBVTcJEpJZQoUsoieYiOxn9f9wVDvzeLr3v+ewvlc7Q0E9YHfzBeEpOWfipRf5Cfi51ZYdrnbLIC0Lq7QsJXXQpUr/txLsGg9fmFtgmKU2HnrK1TID3MuzHKLf2HbQQanEML5sd9Po2fhla5KG1rJBn5M43+HA5bTw8U8J4vpL32DfVHCkOtzpEPw9tVcyDsGVGLZJWA7t40+YryWgeuesrslQS3yzVngVP2l4QgPFFUlnCUvSAVe+z8olie08gysNxizJzH35rjGZ8R+SsOMQpU0BEnwaclz5x5fKZ4F22AfJpkTd+TzZjm6NuppdDVhilih+lL234zNXf0qymS4DVg25JK8JyV28HAZRLQukltGDi8+MmHzU0uB8ZMquQ1mwxVbxYQKzLaf4hIkNE7RhE7qfIj4ca3NP8hbM1nzlyZOI1c1b9shfKfAZG2sBAHCSbdkYs1/D8jmlayA9+xjtmL3Ycl2CN947EBvHe5b81TSdzpsRc1K/ooEOwY5UE=
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: propersquid.com
   local-dir: public
   acl: public_read
