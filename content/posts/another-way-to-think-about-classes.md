@@ -1,6 +1,6 @@
 ---
 title: "Another Way to Think About Classes"
-date: 2018-05-25T20:31:13-07:00
+date: 2018-05-25
 draft: false
 ---
 
