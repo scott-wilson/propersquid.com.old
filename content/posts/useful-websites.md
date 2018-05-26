@@ -1,7 +1,7 @@
 ---
 title: "Useful Websites"
 date: 2018-05-26
-draft: true
+draft: false
 ---
 
 Here's a list of useful programming and CG resources I have found on the internet. This list may get updated in the future.
