@@ -6,18 +6,18 @@ draft: false
 
 One of my friends is learning Python. Which I find exciting, because I am always interested in seeing people learn a skill I really enjoy, and also it is an opportunity for me to help them learn how to program.
 
-There's an experiment that I have always wanted to give to a new Python developer to show them a way of thinking about classes without it being absolutely terrifying. What if Python didn't have classes, but we wanted to get something that worked in an object oriented way?
+There's an experiment that I have always wanted to give to a new Python developer to show them a way of thinking about classes without it being absolutely terrifying. For the sake of a thought experiment, let's imagine that Python didn't have classes, but we wanted to get something that worked in an object oriented way?
 
-This post/lesson is assuming basic Python knowledge (functions, variables, and dictionaries). If you aren't comfortable with the Python basics, then I recommend doing a quick search for beginner courses. They'll probably teach classes, but may still leave you in a feeling of "What is this black magic?"
+This post/lesson is assuming basic Python knowledge (functions, variables, lists, and dictionaries). If you aren't comfortable with the Python basics, then I recommend doing a quick search for beginner courses online. They'll probably teach classes, but may still leave you in a feeling of "What is this black magic?"
 
-Classes and objects are really two things. Data and functions that work with that data. Here's a really basic example:
+First off, what is this class, objects, object oriented thing? First off, object oriented is a way of thinking about data in terms of a thing. For example, you can have data that represents a person, or an animal. We'll continue this example assuming that we want to have code that represents a person. So, the `class` represents a way to construct a person. People have names, hair colours, toes, etc. They also can do certain actions like brush their teeth and watch sitcoms. An `object` represents a very specific person. The object could be someone like me or you. Classes and objects are really two things. Data and functions that work with that data. Here's a really basic example:
 
 ```python
 # This is using the Python 2.7 syntax because I'm use to the VFX world being stuck in 2.7 land.
-my_name = "Scott Wilson"
+my_name = "Scott Wilson"  # This is data
 
-def first_name(full_name):
-    return full_name.split()[0]
+def first_name(full_name):  # This is a function that will operate on data.
+    return full_name.split()[0]  # Split the name into Scott and Wilson, then get the first part, which is Scott.
 
 print first_name(my_name)  # Prints "Scott"
 ```
@@ -56,7 +56,9 @@ def animal_type(person):
     return person[5]
 ```
 
-Better. I now have an object that represents me, and not just my name. However, it is not great. If I want to support another person, such as Dr Wily, then I have to make sure I initialize the list correctly. Here's the same code, but with a simple addition.
+Better. I now have an object that represents me, and not just my name. Also, I have added some functions that will work with the `me` "object". I have some functions that are usually referred to as `getters` that takes the whole object, and returns a part of it. For example, the `first_name` function will get the first name from the object and return it. There's the `getter` sibling called the `setter`, which does the opposite. It takes data and puts it in the object.
+
+However, it is not great. If I want to support another person, such as Dr Wily, then I have to make sure I create the list correctly. I need to make sure that the first value in the list is the first name, followed by last name, and so on. Here's the same code, but with a simple addition.
 
 ```python
 def init_person(first_name, last_name, career):  # The simple addition
@@ -93,7 +95,7 @@ set_career(me, "Wizard")  # Sets my career from Programmer to Wizard
 print career(me)  # Prints "Wizard"
 ```
 
-This is much better. I've made it really easy for anyone using my code to just create a person object and work with it. However, it is now very difficult for me to work with. The reason is because I'm using a list, and lists are great when dealing with positional information (like listing the chapters of a book). But, they're not so good when I want to work with something that can be thought as an object with attributes. This is where dictionaries come in handy! Here's the same code as before, but using a dictionary to hold my object info.
+This is much better. I've made it really easy for anyone using my code to just create a person object and work with it. The person using my code doesn't have to manage all of the items in the list, because I have code that does that for them. However, it is now very difficult for me to work with. The reason is because I'm using a list, and lists are great when dealing with sequential information (like listing the chapters of a book). But, they're not so good when I want to work with something that can be thought as an object with attributes. This is where dictionaries come in handy! Here's the same code as before, but using a dictionary to hold my object info.
 
 ```python
 def init_person(first_name, last_name, career):
@@ -137,7 +139,7 @@ print career(me)  # Prints "Wizard"
 
 This is much easier on the eyes. If I have a program that is thousands of lines long, it is now much easier for me to guess what data I'm working with in the functions. The developer using my code gets the same result either way, but the person that has to maintain my code will not be wanting me dead.
 
-Also, if we map this to a regular Python class, then we see a very similar pattern.
+Also, if we convert this to a regular Python class, then we see a very similar pattern.
 
 ```python
 class Person(object):
@@ -173,7 +175,7 @@ me.set_career(, "Wizard")  # Sets my career from Programmer to Wizard
 print me.career()  # Prints "Wizard"
 ```
 
-So, asides from the class syntax, what is different? Instead of using a dict, I'm storing the data in variables (called attributes) that belong to the object. Note that I used `__` before all of my variable names. This makes the attribute protected, so no subclasses of the person class can use the attribute directly. Basically, it is a way to make sure that if someone creates a programmer class that inherits from the person class, and happens to use the same attributes for something else, it won't clash and cause weird bugs. Also, instead of every function's first argument being `person`, it is `self`. `self` refers to the current object you're working with. And it is always the first argument in all functions (called methods for classes). You could call them something else like `tomato`, but any developer looking at your code will probably look at you odd.
+So, asides from the class syntax, what is different? Instead of using a dict, I'm storing the data in variables (called attributes) that belong to the object. Note that I used `__` before all of my variable names. This makes the attribute `protected`, so no `subclasses` of the person class can use the attribute directly. Basically, it is a way to make sure that if someone creates a programmer class that inherits from the person class, and happens to use the same attributes for something else, it won't clash and cause weird bugs. Also, instead of every function's first argument being `person`, it is `self`. `self` refers to the current object you're working with. And it is always the first argument in all functions (called `methods` for classes). You could call them something else like `tomato`, but any developer looking at your code will probably look at you odd.
 
 Going back to my simple class, what if I want to subclass this? What if I think we really need a programmer class that inherits from a person class?
 
