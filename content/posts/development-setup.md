@@ -1,7 +1,7 @@
 ---
 title: "Development Setup"
 date: 2018-05-27
-draft: true
+draft: false
 ---
 
 This is mostly for me, but if you want the same (or similar) development setup I have, then here's the tools I use.
