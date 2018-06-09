@@ -1,9 +1,7 @@
-baseURL = "https://propersquid.com"
+relativeURLs = true
 languageCode = "en-us"
 title = "Propersquid"
 theme = "minimal"
-# disqusShortname = "username" # delete this to disable disqus comments
-# googleAnalytics = ""
 
 [params]
     author = "Scott Wilson"
