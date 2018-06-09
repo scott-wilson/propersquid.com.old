@@ -42,7 +42,7 @@ theme = "minimal"
 
 # Social icons to be shown on the right-hand side of the navigation bar
 # The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
+# The list of available icons can be found at https://forkawesome.github.io/Fork-Awesome/icons/
 
 [[menu.icon]]
     url = "mailto:scott@propersquid.com"
@@ -68,3 +68,13 @@ theme = "minimal"
     url = "https://stackoverflow.com/users/3108288/scottwilson/"
     name = "stack-overflow"
     weight = 5
+
+[[menu.icon]]
+    url = "https://mastodon.social/@propersquid"
+    name = "mastodon"
+    weight = 6
+
+[[menu.icon]]
+    url = "https://keybase.io/propersquid"
+    name = "keybase"
+    weight = 7
