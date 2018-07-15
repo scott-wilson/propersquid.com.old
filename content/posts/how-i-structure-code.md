@@ -162,3 +162,26 @@ While attribute is still a bit of a mystery in what it returns, at least we don'
 # (Mostly) listen to your linters
 
 While linters aren't perfect tools, they do catch quite a bit of style or actual code problems. While there may be some issues it brings up that are safe to ignore (such as line length), having a mostly clean code base sometimes does reduce errors. But, at the end of the day, use your brain. Sometimes what a linter suggests is a net negative for the readability of the code, and sometimes letting lines go on for too long will hurt you. As they say, write code assuming that the guy maintaining it is a serial murderer with a short temper that knows where you live.
+
+# Keep like things together
+
+It is usually a good idea to keep functions that are related together. For example, if there are functions that are triggered by signals or callbacks, keep those together, and keep UI updating methods together.
+
+```python
+class MyWidget(QtWidgets.QWidget):
+    def __updateCanSubmit(self):
+        pass
+
+    def __updateButtonColor(self):
+        pass
+
+    def __onButtonClicked(self):
+        pass
+
+    def __onSignalEmitted(self):
+        pass
+```
+
+# Make as little as public as possible
+
+Most of the functions made are going to be used for the implementation. When creating code, start off with everything protected or private, and then promote things to public as needed. This way, there's less worries about API compatibility later.
