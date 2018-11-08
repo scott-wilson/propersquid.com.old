@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-date: 2018-01-08T20:13:07-08:00
+date: 2018-11-07
 weight: 1
 draft: false
 ---
@@ -8,6 +8,17 @@ draft: false
 
 Projects
 ========
+
+Cinesite
+--------
+
+The following projects are part of the Maya pipeline.
+
+- **Shotgun Entity Wrapper**: A library to wrap the Shotgun entities into a simple and easy to use interface that supports per session and per user caching.
+- **Shot Publishing**: The main tool to publish shot data from departments such as Animation and Layout for upstream department use.
+- **Scene Assembly**: A library to bundle a scene's hierarchy into a format that supports viewing the saved scene as well as importing back into Maya. This also comes with a tool to easily swap between different versions of the same scene or different assemblies.
+- **Rig Mesh Simplification**: A tool to allow riggers to easily slice meshes for low quality rig representations. This allows for fast animation feedback.
+- **Application Launcher**: A tool to launch instances of applications in an environment appropriate for a project.
 
 DHX Media
 ---------
