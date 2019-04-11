@@ -46,8 +46,8 @@ The following projects are part of the Maya and Nuke pipeline.
 Experience
 ==========
 
-Cinesite
---------
+Stellar Creative Lab
+--------------------
 
 ### Senior Pipeline TD
 *March 2019 - Present*
