@@ -49,8 +49,18 @@ Experience
 Cinesite
 --------
 
+### Senior Pipeline TD
+*March 2019 - Present*
+
+- Developing and maintaining the core and Maya pipeline.
+- Mentoring junior and mid-level pipeline TDs.
+- Assisting artists with issues with the pipeline and tools.
+
+Cinesite
+--------
+
 ### Pipeline TD
-*June 2017 - Present*
+*June 2017 - March 2019*
 
 - Developing and maintaining the core and Maya pipeline.
 - Mentoring junior and mid-level pipeline TDs.
