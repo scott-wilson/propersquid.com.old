@@ -49,8 +49,16 @@ Experience
 Stellar Creative Lab
 --------------------
 
+### Lead Pipeline TD
+*November 2019 - Present*
+
+- Main point of contact for the one of the projects.
+- Developing and maintaining the core and Maya pipeline.
+- Mentoring junior and mid-level pipeline TDs.
+- Assisting artists with issues with the pipeline and tools.
+
 ### Senior Pipeline TD
-*March 2019 - Present*
+*March 2019 - November 2019*
 
 - Developing and maintaining the core and Maya pipeline.
 - Mentoring junior and mid-level pipeline TDs.
